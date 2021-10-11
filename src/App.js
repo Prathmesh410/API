@@ -8,6 +8,8 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css"
 import Axios from 'axios'
 
+import MyCard from './MyCard'
+
 
 
 
@@ -39,10 +41,9 @@ useEffect(() => {
     <Container fluid className="p-4 bg-primary App"  >
     <Row>
     <Col md={4} className="offset-md-4 mt-4" >
-    {details.picture?.large}
-    {details.name?.title} :
-    {details.name?.first}      
-    {details.name?.last}      
+
+    <MyCard detail = {details} />
+   
 
 
 
